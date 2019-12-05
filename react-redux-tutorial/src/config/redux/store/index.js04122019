@@ -1,0 +1,14 @@
+import { applyMiddleware, createStore, compose } from'redux';
+import { ConnectedRouter, connectRouter, routerMiddleware } from'connected-react-router';
+import { forbiddenWordsMiddleware } from '../middleware';
+import thunk from 'redux-thunk';
+import rootReducer from '../reducers';
+
+consthistory=createBrowserHistory();
+
+constcomposeEnhancer=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__||compose;
+
+conststore=createStore(
+connectRouter(history)(rootReducer),
+composeEnhancer(applyMiddleware(routerMiddleware(history),forbiddenWordsMiddleware,thunk))
+);
