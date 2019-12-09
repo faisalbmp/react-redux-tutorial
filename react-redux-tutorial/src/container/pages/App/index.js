@@ -10,6 +10,7 @@ import store from "../../../config/redux/store";
 import Add from "../Add";
 import Show from "../Show";
 import Edit from "../Edit";
+import './App.css'
 
 function App(){
   return(
@@ -17,7 +18,7 @@ function App(){
       <Router>
         <Fragment>
           <div className="navigation">
-            <Link to='/'>HOME</Link>
+            <Link className='link' to='/'>HOME</Link>
           </div>
           <div>
               <Route exact path="/" component={Dashboard} />

@@ -18,9 +18,10 @@ function rootReducer(state = initialState, action) {
     
     case DATA_LOADED:
      
-      return Object.assign({}, state, {
-        remoteArticles: state.remoteArticles.concat(action.payload)
-      });
+      return {
+        ...state,
+        remoteArticles: action.payload
+      };
 
     case DATA_STORED:
       

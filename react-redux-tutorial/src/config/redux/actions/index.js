@@ -37,6 +37,7 @@ export function getData() {
         .then(response => response.json())
         .then(json => {
 
+          // dispatch({ type: "DATA_LOADED", payload: [{Tanggal_Aktivitas: "2019-12-10", name: "skip life"}]});
           dispatch({ type: "DATA_LOADED", payload: json.data });
           resolve(json);
         })

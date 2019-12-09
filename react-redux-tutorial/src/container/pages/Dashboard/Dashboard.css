@@ -1,0 +1,68 @@
+.list-content:hover{
+    cursor: pointer;
+    color: darkcyan;
+}
+
+.container{
+    max-width: 100vh;
+    height: 100vh;
+    display: block;
+    margin: auto;
+}
+
+.container .app-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.app-intro .btn-logout,.app-intro .btn-add{
+    padding: 12px 50px;
+    background: white;
+    color: green;
+    border: 2px solid green;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.app-intro .btn-logout:hover,.app-intro .btn-add:hover{
+    cursor: pointer;
+    background: rgb(121, 37, 255);
+    color: white;
+    border: 2px solid rgb(121, 37, 255);
+}
+
+.container .app-content{
+    display: block;
+    border: 2px solid rgb(99, 3, 163);
+    padding: 0 16px 16px 16px;
+    box-shadow: 4px 3px 9px rgb(0, 0, 0)
+
+}
+
+.app-content h2{
+    font-size: 4rem;
+    background: linear-gradient(to left, rgb(112,101,214),rgb(230,106,213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    margin-left: 2vh;
+    color: black;
+}
+
+.app-content ul{
+    display: block;
+    margin: 2vh;
+    width: 50%;
+    height: auto;
+}
+
+.app-content li{
+    margin: 5px;
+}

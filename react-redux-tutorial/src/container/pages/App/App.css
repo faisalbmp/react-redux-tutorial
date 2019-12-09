@@ -20,3 +20,21 @@
 .App-link {
   color: #09d3ac;
 }
+
+.navigation{
+  /* background: linear-gradient(to left, rgb(112,101,214),rgb(230,106,213)); */
+  background: linear-gradient(to left,#09d313,#e3caff);
+  /* height: 8vh; */
+  padding-block-start: 1vh;
+  padding-block-end: 2vh;
+}
+.navigation .link{
+  color: #282c34;
+  font-size: 4rem;
+  text-decoration: none;
+  margin-left: 5vh;
+}
+
+.link:hover{
+  color: rgb(36, 36, 255);
+}
